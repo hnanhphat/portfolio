@@ -41,9 +41,18 @@
   </header>
 
   <main>
+    <section id="loading">
+      <div class="ellipsis">
+        <div class="ellipsis-01"></div>
+        <div class="ellipsis-02"></div>
+        <div class="ellipsis-03"></div>
+        <div class="ellipsis-04"></div>
+      </div>
+    </section>
+
     <section id="first-view">
-      <div class="avatar"></div>
-      <div class="information">
+      <div class="avatar" data-aos="zoom-in" data-aos-delay="1500"></div>
+      <div class="information" data-aos="fade-left" data-aos-delay="2300">
         <h1 class="name">Barry Hoang</h1>
         <h3 class="position">Full Stack Web Developer</h3>
         <a href="#introduce">Read more</a>
@@ -51,7 +60,7 @@
     </section>
 
     <section id="introduce">
-      <div class="profile">
+      <div class="profile" data-aos="fade-right" data-aos-delay="800">
         <h2 class="bnr">All about me</h2>
         <p class="txt">
           Hello everyone, my full name is Hoang Nguyen Anh Phat and I'm 24 years old. I come from Hoa Sen University with Information Technology Major. After completing the score in school, I do a lot of jobs like Baker, Personal Trainer, ... and the job I worked as long as possible is Frontend Developer in a Japanese Company is called ALive Viet Nam.<br>
@@ -64,15 +73,15 @@
         </p>
         <a href="#" class="btn">More</a>
       </div>
-      <div class="picture">
+      <div class="picture" data-aos="fade-left">
         <img src="./assets/img/profile.jpeg" alt="Barry">
       </div>
     </section>
 
     <section id="my-projects">
-      <h2>My projects</h2>
+      <h2 data-aos="flip-up">My projects</h2>
       <ul>
-        <li>
+        <li data-aos="zoom-in">
           <div class="circle">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-check-alt" class="svg-inline--fa fa-money-check-alt fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M608 32H32C14.33 32 0 46.33 0 64v384c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zM176 327.88V344c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-16.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V152c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v16.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07zM416 312c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16zm160 0c0 4.42-3.58 8-8 8h-80c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16zm0-96c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h272c4.42 0 8 3.58 8 8v16z"></path></svg>
           </div>
@@ -85,7 +94,7 @@
             <a href="#">Website</a><a href="#">Github</a>
           </div>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-delay="500">
           <div class="circle">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-medical-alt" class="svg-inline--fa fa-file-medical-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M288 136V0H88C74.7 0 64 10.7 64 24v232H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h140.9c3 0 5.8 1.7 7.2 4.4l19.9 39.8 56.8-113.7c2.9-5.9 11.4-5.9 14.3 0l34.7 69.5H352c8.8 0 16 7.2 16 16s-7.2 16-16 16h-89.9L240 275.8l-56.8 113.7c-2.9 5.9-11.4 5.9-14.3 0L134.1 320H64v168c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H312c-13.2 0-24-10.8-24-24zm153-31L343.1 7c-4.5-4.5-10.6-7-17-7H320v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg>
           </div>
@@ -98,7 +107,7 @@
             <a href="#">Website</a><a href="#">Github</a>
           </div>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-delay="1000">
           <div class="circle">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="graduation-cap" class="svg-inline--fa fa-graduation-cap fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>
           </div>
@@ -115,19 +124,19 @@
     </section>
 
     <section id="testimonials">
-      <h2>Testimonials</h2>
+      <h2 data-aos="flip-up">Testimonials</h2>
       <ul>
-        <li>
+        <li data-aos="zoom-in">
           <div class="circle circle-01"></div>
           <h3>Monkey D. Luffy</h3>
           <p>"I can use Monkey Money app to save money on buying meat every day, this is very helpful for me."</p>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-delay="500">
           <div class="circle circle-02"></div>
           <h3>Eustass Kid</h3>
           <p>"After using Health Care application for a while, I feel that my health has improved a lot after the accident happened before."</p>
         </li>
-        <li>
+        <li data-aos="zoom-in" data-aos-delay="1000">
           <div class="circle circle-03"></div>
           <h3>Trafalgar D. Water Law</h3>
           <p>"As a doctor, I feel safe if I send my children to HearSeeDo Kindergarten."</p>
@@ -135,7 +144,7 @@
       </ul>
     </section>
 
-    <section id="contact-me">
+    <section id="contact-me" data-aos="fade-up">
       <div class="contact">
         <div class="contact-group">
           <h3>Mailing Address</h3>
@@ -154,7 +163,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <div class="scroll"><a href="javascript:void(0)"></a></div>
     <div class="social">
       <a href="#"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Facebook icon</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -165,7 +174,10 @@
     <p class="copyright">2021 - Portfolio developed by <a href="#">Barry Hoang</a></p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/pace.min.js"></script>
   <script src="./style.js"></script>
 </body>
 

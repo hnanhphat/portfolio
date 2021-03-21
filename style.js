@@ -1,4 +1,12 @@
 $(function() {
+  Pace.on('done', function() {
+    setTimeout(function(){ $('#loading').addClass('loaded'); }, 1000);
+  });
+
+  AOS.init({
+    duration: 800
+  });
+
   $('#hamburger .themes a').on('click', function() {
     $("body").removeAttr('class').addClass($(this).attr('class')+'-theme');
   });

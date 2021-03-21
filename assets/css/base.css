@@ -50,4 +50,5 @@ section {
   display: flex;
   height: 100vh;
   min-height: 700px;
+  overflow: hidden;
 }
