@@ -1025,6 +1025,7 @@ footer .copyright a {
   }
 
   #first-view {
+    height: 85vh;
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 80px;
@@ -1047,7 +1048,7 @@ footer .copyright a {
   }
 
   #first-view .avatar {
-    height: 300px;
+    height: 320px;
   }
 
   #first-view .information {
