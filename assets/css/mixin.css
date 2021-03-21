@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Roboto&display=swap');
 
 body {
-  /* THEME COLOR */
-  --primary-color: #fbdf70;
-
   /* COLOR */
   --black: #37393d;
   --white: #fff;
-
-  --corduroy: #626b63;
 
   /* FONT FAMILY */
   --mon: 'Montserrat', sans-serif;
@@ -18,35 +13,77 @@ body {
 
 body.red-theme {
   /* THEME COLOR */
+  --primary-color-light: #ff7a4d;
   --primary-color: #ff4d4d;
+  --primary-color-dark: #ff4d7a;
+}
+
+body.red-theme header .hamburger nav .themes a.red {
+  pointer-events: none;
 }
 
 body.orange-theme {
   /* THEME COLOR */
+  --primary-color-light: #ffe312;
   --primary-color: #ffa812;
+  --primary-color-dark: #ff6d12;
+}
+
+body.orange-theme header .hamburger nav .themes a.orange {
+  pointer-events: none;
 }
 
 body.yellow-theme {
   /* THEME COLOR */
+  --primary-color-light: #f4fb70;
   --primary-color: #fbdf70;
+  --primary-color-dark: #fbbc70;
+}
+
+body.yellow-theme header .hamburger nav .themes a.yellow {
+  pointer-events: none;
 }
 
 body.green-theme {
   /* THEME COLOR */
+  --primary-color-light: #3da93c;
   --primary-color: #3ca956;
+  --primary-color-dark: #3ca971;
+}
+
+body.green-theme header .hamburger nav .themes a.green {
+  pointer-events: none;
 }
 
 body.blue-theme {
   /* THEME COLOR */
+  --primary-color-light: #00ffff;
   --primary-color: #00bfff;
+  --primary-color-dark: #007fff;
+}
+
+body.blue-theme header .hamburger nav .themes a.blue {
+  pointer-events: none;
 }
 
 body.pink-theme {
   /* THEME COLOR */
+  --primary-color-light: #e7545b;
   --primary-color: #e75480;
+  --primary-color-dark: #e754a5;
+}
+
+body.pink-theme header .hamburger nav .themes a.pink {
+  pointer-events: none;
 }
 
 body.purple-theme {
   /* THEME COLOR */
+  --primary-color-light: #ae70db;
   --primary-color: #9370db;
+  --primary-color-dark: #7870db;
+}
+
+body.purple-theme header .hamburger nav .themes a.purple {
+  pointer-events: none;
 }

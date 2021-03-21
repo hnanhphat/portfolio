@@ -168,6 +168,10 @@ header .hamburger nav .copyright a {
   color: var(--white);
 }
 
+header .hamburger nav .copyright a:hover {
+  color: var(--primary-color);
+}
+
 header .hamburger:hover span {
   background: var(--black);
 }
@@ -312,7 +316,45 @@ header .hamburger input:checked~nav {
   color: var(--primary-color);
   font-family: var(--noto);
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 10vw;
+  text-align: justify;
+}
+
+#introduce .profile .btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+  font-family: var(--mon);
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 10vw;
+  position: relative;
+}
+
+#introduce .profile .btn::before {
+  content: '';
+  position: absolute;
+  background: var(--primary-color);
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: all .3s ease-out;
+}
+
+#introduce .profile .btn:hover {
+  color: var(--black);
+}
+
+#introduce .profile .btn:hover::before {
+  width: 100%;
 }
 
 #introduce .picture {
@@ -412,16 +454,103 @@ header .hamburger input:checked~nav {
   color: var(--white);
 }
 
-#my-projects ul li .circle {
+#my-projects ul li {
+  background: none;
+  min-height: 475px;
+  perspective: 150rem;
+  position: relative;
+}
+
+#my-projects ul li .card {
+  background: var(--white);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 75px 20px 0;
+  overflow: hidden;
+  transition: all .8s ease;
+}
+
+#my-projects ul li .card-back {
   background: var(--primary-color);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transform: rotateY(180deg);
+}
+
+#my-projects ul li .card-back img {
+  width: 100%;
+}
+
+#my-projects ul li .card-back a {
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  width: calc(50% - 5px);
+  height: 40px;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+#my-projects ul li .card-back a::before,
+#my-projects ul li .card-back a::after {
+  content: '';
+  position: absolute;
+  background: var(--black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  z-index: -2;
+  transform: translateX(-50%);
+  transition: all .3s ease-out;
+}
+
+#my-projects ul li .card-back a::before {
+  background: var(--primary-color);
+  width: 0;
+  z-index: -1;
+}
+
+#my-projects ul li .card-back a:hover {
+  color: var(--black);
+}
+
+#my-projects ul li .card-back a:hover::before {
+  width: calc(100% + 2px);
+}
+
+#my-projects ul li .circle {
+  background: var(--primary-color);
+  border: 5px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
 }
 
 #my-projects ul li .circle svg {
   fill: var(--white);
   width: 40%;
+}
+
+#my-projects ul li:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+#my-projects ul li:hover .card-back {
+  transform: rotateY(0);
 }
 
 #testimonials {
