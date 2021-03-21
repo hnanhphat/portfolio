@@ -52,3 +52,16 @@ section {
   min-height: 700px;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 1025px) {
+  section {
+    height: 80vh;
+    min-height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section {
+    height: 100vh;
+  }
+}
