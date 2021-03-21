@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Roboto&display=swap');
+
+body {
+  /* THEME COLOR */
+  --primary-color: #fbdf70;
+
+  /* COLOR */
+  --black: #37393d;
+  --white: #fff;
+
+  --corduroy: #626b63;
+
+  /* FONT FAMILY */
+  --mon: 'Montserrat', sans-serif;
+  --noto: 'Noto Sans JP', sans-serif;
+  --robo: 'Roboto', sans-serif;
+}
+
+body.red-theme {
+  /* THEME COLOR */
+  --primary-color: #ff4d4d;
+}
+
+body.orange-theme {
+  /* THEME COLOR */
+  --primary-color: #ffa812;
+}
+
+body.yellow-theme {
+  /* THEME COLOR */
+  --primary-color: #fbdf70;
+}
+
+body.green-theme {
+  /* THEME COLOR */
+  --primary-color: #3ca956;
+}
+
+body.blue-theme {
+  /* THEME COLOR */
+  --primary-color: #00bfff;
+}
+
+body.pink-theme {
+  /* THEME COLOR */
+  --primary-color: #e75480;
+}
+
+body.purple-theme {
+  /* THEME COLOR */
+  --primary-color: #9370db;
+}
